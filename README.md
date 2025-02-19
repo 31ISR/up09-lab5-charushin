@@ -25,3 +25,10 @@
    ```bash
    git clone https://github.com/31ISR/up09-lab5-charushin.git
    cd up-09-lab5-charushin
+
+## Создать и активировать виртуальное окружение:
+2. **Клонировать репозиторий:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate # Linux/MacOS
+    venv\Scripts\activate.bat # Windows
