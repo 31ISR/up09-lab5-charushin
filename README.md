@@ -20,15 +20,64 @@
 - HTML5
 - JavaScript
 
-## Установка и запуск
-1. **Клонировать репозиторий:**
+## Установка и запуск 
+**Клонировать репозиторий:**
    ```bash
    git clone https://github.com/31ISR/up09-lab5-charushin.git
    cd up-09-lab5-charushin
-
+   ```
 ## Создать и активировать виртуальное окружение:
-2. **Клонировать репозиторий:**
     ```bash
     python -m venv venv
     source venv/bin/activate # Linux/MacOS
     venv\Scripts\activate.bat # Windows
+    ```
+
+## Установить зависимости:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Настройка окружения: Создайте файл .env в корне проекта со следующим содержанием:
+    ```plaintext
+    SECRET_KEY=ваш-секретный-ключ
+    DEBUG=True
+    DATABASE_URL=postgres:///ваша-база-данных
+    ```
+## Применить миграции:
+    ```bash
+    python manage.py migrate
+    ```
+## Создать суперпользователя:
+    ```bash
+    python manage.py createsuperuser
+    ```
+## Запустить сервер:
+    ```bash
+    python manage.py runserver
+    ```
+## Доступные страницы
+- / - Главная страница
+- /post_page/ - Все посты
+- /communities/ - Список сообществ
+- /post_new/ - Создать пост
+- /communities_new/ - Создать сообщество
+- /register/ - Регистрация
+- /login/ - Авторизация
+- /about/ - Обо мне
+## Админ-панель
+Админка доступна по адресу /admin/. Для доступа необходимо:
+
+Выполнить команду createsuperuser
+Войти с логином и паролем суперпользователя
+
+Возможности админки:
+- Управление пользователями
+- Модерация постов
+- Управление сообществами
+- Просмотр статистики
+- Редактирование любых моделей
+
+## Контакты
+- Автор: CAPYB001
+- Поддержка: osnovnyakk@mail.ru
