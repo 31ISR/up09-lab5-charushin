@@ -27,35 +27,35 @@
    cd up-09-lab5-charushin
    ```
 ## Создать и активировать виртуальное окружение:
-    ```bash
+   
     python -m venv venv
     source venv/bin/activate # Linux/MacOS
     venv\Scripts\activate.bat # Windows
-    ```
+
 
 ## Установить зависимости:
-    ```bash
+    
     pip install -r requirements.txt
-    ```
+   
 
 ## Настройка окружения: Создайте файл .env в корне проекта со следующим содержанием:
-    ```plaintext
+   
     SECRET_KEY=ваш-секретный-ключ
     DEBUG=True
     DATABASE_URL=postgres:///ваша-база-данных
-    ```
+   
 ## Применить миграции:
-    ```bash
+    
     python manage.py migrate
-    ```
+   
 ## Создать суперпользователя:
-    ```bash
+    
     python manage.py createsuperuser
-    ```
+    
 ## Запустить сервер:
-    ```bash
+    
     python manage.py runserver
-    ```
+   
 ## Доступные страницы
 - / - Главная страница
 - /post_page/ - Все посты
@@ -79,5 +79,5 @@
 - Редактирование любых моделей
 
 ## Контакты
-- Автор: CAPYB001
-- Поддержка: osnovnyakk@mail.ru
+Автор: CAPYB001
+Поддержка: osnovnyakk@mail.ru
