@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Создать новое сообщество
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Создать новое сообщество</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="submitik" type="submit">Создать сообщество</button>
+        </form>
+    </section>
+{% endblock %}

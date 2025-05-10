@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} {% block title %} communities {% endblock %}
+{% block content %}
+<section>
+    <h1>Группы</h1>
+
+    {% for community in communities %}
+    <article class="communities">
+        <h2>
+            <a href="{%  url 'communities:page' slug=community.slug %}"> {{community.title }} </a>
+        </h2>
+        <p>{{ community.description }}</p>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}
